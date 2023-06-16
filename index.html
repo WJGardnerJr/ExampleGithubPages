@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -16,9 +16,36 @@
     <div>
         <input type="text" id="email" placeholder="email">
         <input type="password" id="password" placeholder="password">
-        <button id="login" onclick="login()">Login</button>
-        <button id="signup" onlick="signUp()">Sign Up</button>
+        <button id="login" onclick="logIn()">Login</button>
+        <button id="signup" onclick="signUp()">Sign Up</button>
     </div>
+
+    <div id="box">
+        <div>name</div>
+        <input type="text" id="name" placeholder="name">
+        <div>age</div>
+        <input type="text" id="age" placeholder="age">
+        <div>id</div>
+        <input type="text" id="id" placeholder="id">
+        <div>semester</div>
+        <input type="text" id="semester" placeholder="semester">
+        <div>Class</div>
+        <input type="text" id="class" placeholder="class">
+        <div>Grade</div>
+        <input type="text" id="grade" placeholder="grade">
+        <button type="button" id="add" onclick="set()">Add Data</button>
+        <button type="button" id="update" onclick="update()">Update Data</button>
+        <button type="button" id="update" onclick="show()">Show Data</button>
+        <button type="button" id="delete" onclick="deleteData()">Delete</button>
+        </div>
+
+        <div>
+            <div id="nameDisplay"></div>
+            <div id="ageDisplay"></div>
+            <div id="idDisplay"></div>
+            <div id="semesterDisplay"></div>
+            </div>
+ 
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
